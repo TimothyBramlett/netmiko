@@ -22,7 +22,7 @@ def find_version(*file_paths):
 
 
 setup(
-    name='netmiko',
+    name='netmikoGDT',
     version=find_version('netmiko', '__init__.py'),
     description='Multi-vendor library to simplify Paramiko SSH connections to network devices',
     url='https://github.com/ktbyers/netmiko',

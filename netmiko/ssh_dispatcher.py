@@ -7,6 +7,7 @@ from netmiko.cisco import CiscoNxosSSH
 from netmiko.cisco import CiscoXrSSH
 from netmiko.cisco import CiscoWlcSSH
 from netmiko.cisco import CiscoS300SSH
+from netmiko.cisco import CiscoIosSSHBehindOpengear
 from netmiko.eltex import EltexSSH
 from netmiko.arista import AristaSSH
 from netmiko.hp import HPProcurveSSH, HPComwareSSH
@@ -35,6 +36,7 @@ from netmiko.ubiquiti import UbiquitiEdgeSSH
 # The keys of this dictionary are the supported device_types
 CLASS_MAPPER_BASE = {
     'cisco_ios': CiscoIosSSH,
+    'cisco_ios_behind_opengear': CiscoIosSSHBehindOpengear,
     'cisco_xe': CiscoIosSSH,
     'cisco_asa': CiscoAsaSSH,
     'cisco_nxos': CiscoNxosSSH,
